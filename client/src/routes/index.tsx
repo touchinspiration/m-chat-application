@@ -3,7 +3,6 @@ import AddFriend from '../pages/AddFriend';
 import Channel from '../pages/Channel';
 import Chat from '../pages/Chat';
 import Create from '../pages/Create';
-import Home from '../pages/Home';
 import Login from '../pages/Login';
 import Profile from '../pages/Profile';
 import ProfileEdit from '../pages/ProfileEdit';
@@ -15,7 +14,6 @@ const Index = () => {
     return (
         <Routes>
             <Route path='/' element={<ProtectedRoute/>}>
-                <Route path='/' element={<Home />} />
                 <Route path='/profile' element={<Profile/>} />
                 <Route path='/profile/edit' element={<ProfileEdit/>} />
                 <Route path='/create' element={<Create />} />

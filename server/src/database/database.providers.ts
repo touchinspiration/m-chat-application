@@ -9,11 +9,11 @@ export const databaseProviders = [
     useFactory: async () => {
       const sequelize = new Sequelize({
         dialect: 'postgres',
-        host: 'localhost',
+        host: 'dpg-d1jt66q4d50c738gt0v0-a',
         port: 5432,
-        username: 'postgres',
-        password: process.env.DB_PASSWORD,
-        database: 'link-chat-app'
+        username: 'username',
+        password: 'gDsMgrLZeeEKMgg0RQ0b98Kk8p4sVO2Z',
+        database: 'chat_app_p5bs'
       });
       sequelize.addModels([User, Message, Channel]);
       await sequelize.sync();
